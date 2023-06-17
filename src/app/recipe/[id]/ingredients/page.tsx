@@ -5,11 +5,11 @@ import { IngredientListItem } from "@/app/_components/IngredientListItem";
 export default function Ingredients() {
   return (
     <div className="py-6">
-      <div className="flex justify-between ">
+      <div className="flex justify-between px-4">
         <div className="text-2xl font-bold">2人前</div>
         <div className="text-xl font-bold text-slate-500">まとめてお買い物に追加</div>
       </div>
-      <div>
+      <div className="mt-2">
         {ingredients.map((ingredient, i) => {
           return <IngredientListItem key={i} index={i} text={ingredient.text} isInCart={ingredient.isInCart} />;
         })}

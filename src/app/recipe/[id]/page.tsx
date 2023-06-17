@@ -8,7 +8,7 @@ export default function RecipeDetail() {
       {methodItems.map((item, i) => {
         return <RecipeStepItem key={i} index={i} text={item.text} remarks={item.remarks} />;
       })}
-      <div className="my-4 flex justify-end">
+      <div className="my-4 mr-2 flex justify-end">
         <CopyButton methodItems={methodItems} />
       </div>
     </div>

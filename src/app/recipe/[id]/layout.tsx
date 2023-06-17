@@ -1,7 +1,7 @@
 // レシピ詳細のレイアウト
 export default function RecipeDetailLayout({ children }: { children: React.ReactNode }) {
   return (
-    <main className="mx-auto max-w-[480px]">
+    <main className="mx-auto w-full sm:max-w-[480px] sm:border">
       <div>
         <div className="aspect-square bg-orange-300 text-center">ここにレシピ画像入る</div>
         <div className="space-y-3 p-4">
